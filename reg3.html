@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REG</title>
+<style>
+    body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); /* Тень */
+    }
+
+    .block1 {
+        flex: 1;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        height: 500px;
+         display: flex;
+        flex-direction: column; /* Устанавливаем вертикальное расположение дочерних элементов */
+        align-items: center;
+
+    }
+
+    
+
+
+
+    .block2 {
+        flex: 1;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        background-color: #F35B5B;
+        color: white;
+
+    }
+
+    .centered-text {
+        text-align: center;
+    }
+
+    /* Для мобильных устройств */
+    @media (max-width: 768px) {
+        .block {
+            flex: 100%;
+        }
+    }
+
+button {
+    width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+ 
+  background: #F35B5B;
+  border-radius: 3em;
+  border-color: red;
+  color: white;
+
+
+}
+
+
+.forgot-password{
+    margin-left: 135px;
+    color: gray;
+
+}
+
+.lab
+{
+    font-size: 12px;
+    font-weight:bold;
+    
+
+}
+
+
+h1{
+    font-weight: 100;
+    align-self: flex-start; 
+    margin-left: 30px;
+    margin-top: 30px;
+
+}
+h2{
+    font-weight:bold;
+    font-size: 40px;
+    margin-top: 28%;
+}
+
+
+ input[type=text], input[type=password] {
+  width: 93%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 3em;
+  padding-top: 16px;
+
+
+}
+
+
+</style>
+</head>
+
+
+
+<body>
+
+<div class="container">
+    <div class="block1">
+       <h1>Sign In</h1><br><br>
+        <form>
+            <label class="lab" for="username">USERNAME</label><br>
+            <input type="text" id="username"placeholder="Username" name="username"><br>
+            <label class="lab" for="password" >PASSWORD</label><br>
+            <input type="password" id="password" placeholder="Password" name="password">
+            <button type="submit">Sign In</button><br>
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember Me</label>
+            <label class="forgot-password">Forgot Password</label>
+        </form>
+    </div>
+    <div class="block2">
+        <div class="col">
+            <center><h2>Colegiul<br>International 
+            de Administrare si Bussines</h2>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
